@@ -3,23 +3,33 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
-    align-items: center;
-    height: 40px;
+    align-items: start;
+    height: 100%;
+    min-height: 40px;
     background-color: #fff;
     margin: 12px 25px;
     border-radius: 15px;
     padding: 10px 20px;
+    max-width: 250px;
 }
 .item input{
-    
+    /* flex-grow: -1; */
 }
 .item label{
-    order:4
+    flex-grow: 1;
+    text-overflow: ellipsis;
+    inline-size: 56px;
+    overflow: hidden;
+    /* word-break: break-all;  */
+
 }
 .item span{
+    /* flex-grow: 1; */
+    margin:0 10px
 
 }
 .item button{
+    /* flex-grow: -1; */
 
 }
 .color{
@@ -29,3 +39,13 @@
     border-radius: 40%;
     border:solid 3.5px;
 }
+
+
+
+/* Style its checked state...with a ticked icon */
+[type=checkbox]:checked + span:before {
+    content: '\2714';
+    position: absolute;
+    top: -5px;
+    left: 0;
+  }

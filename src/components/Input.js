@@ -29,7 +29,7 @@ export default function Input({ setInputText, Tasks, setTasks, InputText, setSta
         setStatus(e.target.value);
     }
     return (
-        <div>
+        <>
             <form onSubmit={SubmitHandler}>
                 <input value={InputText} onChange={InputHandler} type="text" placeholder="write your task.." />
                 <select onChange={colorHandler} >
@@ -45,6 +45,6 @@ export default function Input({ setInputText, Tasks, setTasks, InputText, setSta
                 <option value="Completed">Completed</option>
                 <option value="Uncompleted">Uncompleted</option>
             </select>
-        </div>
+        </>
     )
 }
