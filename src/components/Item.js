@@ -21,11 +21,11 @@ export default function Item(props) {
         ))
     }
     return (
-        <div>
+        <div className="item">
             <input onChange={onChangeHandler} type="checkbox" id={props.keyVal} key={props.keyVal} checked={props.checked && "checked"} />
             <label htmlFor={props.keyVal}>{props.text}</label>
-            <span className="color" style={{ background: props.color }}></span>
+            <span className="color" style={{ borderColor: props.color }}></span>
             <button onClick={deleteHandler}>Delete</button>
-        </div>
+        </div >
     )
 }

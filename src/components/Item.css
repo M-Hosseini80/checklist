@@ -1,5 +1,31 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    height: 40px;
+    background-color: #fff;
+    margin: 12px 25px;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+.item input{
+    
+}
+.item label{
+    order:4
+}
+.item span{
+
+}
+.item button{
+
+}
 .color{
-    width:50px;
-    height: 50px;
+    width:10px;
+    height: 10px;
     display: inline-block;
+    border-radius: 40%;
+    border:solid 3.5px;
 }

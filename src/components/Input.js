@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import uuid from 'react-uuid'
 
-export default function Input({ setInputText, Tasks, setTasks, InputText }) {
+export default function Input({ setInputText, Tasks, setTasks, InputText, setStatus }) {
 
     // const [htmlId] = useId();
     const [color, setColor] = useState("blue");
@@ -25,6 +25,9 @@ export default function Input({ setInputText, Tasks, setTasks, InputText }) {
     }
 
 
+    const filterHandler = (e) => {
+        setStatus(e.target.value);
+    }
     return (
         <div>
             <form onSubmit={SubmitHandler}>
@@ -36,6 +39,12 @@ export default function Input({ setInputText, Tasks, setTasks, InputText }) {
                 </select>
                 <button type="submit">send!</button>
             </form>
+
+            <select onChange={filterHandler}>
+                <option value="All">All</option>
+                <option value="Completed">Completed</option>
+                <option value="Uncompleted">Uncompleted</option>
+            </select>
         </div>
     )
 }
