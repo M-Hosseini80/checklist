@@ -19,7 +19,6 @@ export default function Item(props) {
                 return item;
             }
         ))
-        console.log(e)
     }
     return (
         <div>

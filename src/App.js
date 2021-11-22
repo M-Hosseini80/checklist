@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Input InputText={InputText} setInputText={setInputText} Tasks={Tasks} setTasks={setTasks} />
       <Lists Tasks={Tasks} setTasks={setTasks} />
-      <h1>text: {InputText}</h1>
+      {/* <h1>text: {InputText}</h1> */}
     </div>
   );
 }

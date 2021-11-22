@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import uuid from 'react-uuid'
 
 export default function Input({ setInputText, Tasks, setTasks, InputText }) {
 
     // const [htmlId] = useId();
-
+    const [color, setColor] = useState("blue");
+    const colorHandler = (e) => {
+        setColor(e.target.value)
+    }
     const InputHandler = (e) => {
         // console.log(e.target.value)
         setInputText(e.target.value)
@@ -14,7 +17,7 @@ export default function Input({ setInputText, Tasks, setTasks, InputText }) {
         // console.log(e)
         setTasks([
             ...Tasks,
-            { text: InputText, completed: false, id: uuid(), color: "blue" }
+            { text: InputText, completed: false, id: uuid(), color: color }
 
         ]);
 
@@ -26,10 +29,10 @@ export default function Input({ setInputText, Tasks, setTasks, InputText }) {
         <div>
             <form onSubmit={SubmitHandler}>
                 <input value={InputText} onChange={InputHandler} type="text" placeholder="write your task.." />
-                <select>
-                    <option>blue</option>
-                    <option>yellow</option>
-                    <option>black</option>
+                <select onChange={colorHandler} >
+                    <option value="blue">blue</option>
+                    <option value="yellow">yellow</option>
+                    <option value="black">black</option>
                 </select>
                 <button type="submit">send!</button>
             </form>
