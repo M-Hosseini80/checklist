@@ -1,9 +1,9 @@
 import React from 'react'
-import { useId } from "react-id-generator";
+import uuid from 'react-uuid'
 
 export default function Input({ setInputText, Tasks, setTasks, InputText }) {
 
-    const [htmlId] = useId();
+    // const [htmlId] = useId();
 
     const InputHandler = (e) => {
         // console.log(e.target.value)
@@ -14,7 +14,7 @@ export default function Input({ setInputText, Tasks, setTasks, InputText }) {
         // console.log(e)
         setTasks([
             ...Tasks,
-            { text: InputText, completed: false, id: htmlId }
+            { text: InputText, completed: false, id: uuid(), color: "blue" }
 
         ]);
 

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Input InputText={InputText} setInputText={setInputText} Tasks={Tasks} setTasks={setTasks} />
-      <Lists />
+      <Lists Tasks={Tasks} setTasks={setTasks} />
       <h1>text: {InputText}</h1>
     </div>
   );

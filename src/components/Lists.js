@@ -1,9 +1,13 @@
 import React from 'react'
-
-export default function Lists() {
+import Item from './Item'
+export default function Lists({ Tasks, setTasks }) {
     return (
         <div>
-
+            {
+                Tasks.map(task => (
+                    <Item checked={task.completed} text={task.text} color={task.color} keyVal={task.id} key={task.id} setTasks={setTasks} Tasks={Tasks} />
+                ))
+            }
         </div>
     )
 }
