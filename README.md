@@ -4,6 +4,13 @@ This project is only a beta and personal version
 
 it save all  of your note data on "LocalStorage"
 
+# قوانین و شرایط استفاده
+این پروژه (پروژه چک لیست یا ToDo ، فقط یک پروژه شخصی و بتا و برای استفاده شخصی می باشد و شما می توانید آن را گسترش دهید.
+
+پروژه های موجود در لینک زیر:
+https://www.projects.mohamadhossein.ir/
+
+صرفا برای به نمایش گذاشتن مهارت و نحوه کد نویسی طراح قرار داده شده اند.
 
 # Demo
 <p align="center"><img src="https://projects.mohamadhossein.ir/checklist/static/media/Checklist.JPG" alt="simple react js ToDo checklist"/></p>
