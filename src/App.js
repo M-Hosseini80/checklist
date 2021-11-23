@@ -53,14 +53,17 @@ function App() {
   );
 
   return (
-    <div className="App">
-      {/* <button onClick={ClearTasks}>Clear All Tasks!</button> */}
-      <Input InputText={InputText} setInputText={setInputText} Tasks={Tasks} setTasks={setTasks} setStatus={setStatus} />
-      <Lists filter={filter} Tasks={Tasks} setTasks={setTasks} />
-      {/* <h1>text: {InputText}</h1> */}
+    <>
+      <div className="App">
+        {/* <button onClick={ClearTasks}>Clear All Tasks!</button> */}
+        <Input InputText={InputText} setInputText={setInputText} Tasks={Tasks} setTasks={setTasks} setStatus={setStatus} />
+        <Lists filter={filter} Tasks={Tasks} setTasks={setTasks} />
+        {/* <h1>text: {InputText}</h1> */}
 
 
-    </div>
+      </div>
+      <footer><p> &lt;/&gt; by: <a href="https://mohamadhossein.ir/">MohamadHossein.ir</a> </p><p><a rel="noreferrer" target="_blank" href="https://github.com/M-Hosseini80/checklist">github / Terms of Use</a></p></footer>
+    </>
   );
 }
 
