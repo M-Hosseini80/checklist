@@ -1,5 +1,5 @@
 
-#Terms of Use
+# Terms of Use
 This project just a beta and its personal,
 project save all data of your notes on "LocalStorage"
 
