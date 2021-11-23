@@ -20,7 +20,7 @@
     appearance: none;
     transition: 0.3s;
     outline: none;
-    padding-top: 5px;
+
 }
 .item input:before{
     content:'';

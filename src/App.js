@@ -29,10 +29,10 @@ function App() {
     }
   }
 
-  const ClearTasks = () => {
-    localStorage.removeItem('Tasks');
-    setTasks([]);
-  }
+  // const ClearTasks = () => {
+  //   localStorage.removeItem('Tasks');
+  //   setTasks([]);
+  // }
 
   useEffect(
     () => {
