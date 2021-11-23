@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import uuid from 'react-uuid'
-
+import './Input.css'
 export default function Input({ setInputText, Tasks, setTasks, InputText, setStatus }) {
 
     // const [htmlId] = useId();
-    const [color, setColor] = useState("blue");
+    const [color, setColor] = useState("white");
     const colorHandler = (e) => {
         setColor(e.target.value)
     }
@@ -15,7 +15,7 @@ export default function Input({ setInputText, Tasks, setTasks, InputText, setSta
     const SubmitHandler = (e) => {
         e.preventDefault();
         // console.log(e)
-        setTasks([
+        InputText > " " && setTasks([
             ...Tasks,
             { text: InputText, completed: false, id: uuid(), color: color }
 
@@ -29,22 +29,29 @@ export default function Input({ setInputText, Tasks, setTasks, InputText, setSta
         setStatus(e.target.value);
     }
     return (
-        <>
-            <form onSubmit={SubmitHandler}>
-                <input value={InputText} onChange={InputHandler} type="text" placeholder="write your task.." />
-                <select onChange={colorHandler} >
-                    <option value="blue">blue</option>
-                    <option value="yellow">yellow</option>
-                    <option value="black">black</option>
-                </select>
-                <button type="submit">send!</button>
-            </form>
-
-            <select onChange={filterHandler}>
+        <div className="addNoteDiv">
+            <select className="filter" name="filter" onChange={filterHandler}>
                 <option value="All">All</option>
                 <option value="Completed">Completed</option>
                 <option value="Uncompleted">Uncompleted</option>
             </select>
-        </>
+            <div>
+
+            </div>
+            <form className="addNote" onSubmit={SubmitHandler}>
+
+                <input className="InputSe" dir="auto" value={InputText} onChange={InputHandler} type="text" placeholder="write your task.." />
+                <select onChange={colorHandler} >
+                    <option value="white">None</option>
+                    <option value="green">Low</option>
+                    <option value="brown">Medium</option>
+                    <option value="red">High</option>
+                </select>
+                <input type="submit" className="submitNote" value="" />
+
+            </form>
+
+
+        </div>
     )
 }

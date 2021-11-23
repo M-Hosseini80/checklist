@@ -54,11 +54,12 @@ function App() {
 
   return (
     <div className="App">
+      {/* <button onClick={ClearTasks}>Clear All Tasks!</button> */}
       <Input InputText={InputText} setInputText={setInputText} Tasks={Tasks} setTasks={setTasks} setStatus={setStatus} />
       <Lists filter={filter} Tasks={Tasks} setTasks={setTasks} />
       {/* <h1>text: {InputText}</h1> */}
 
-      <button onClick={ClearTasks}>Clear All Tasks!</button>
+
     </div>
   );
 }
