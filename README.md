@@ -1,3 +1,12 @@
+
+#Terms of Use
+This project just a beta and its personal,
+project save all data of your notes on "LocalStorage"
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
