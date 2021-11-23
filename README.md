@@ -23,7 +23,10 @@ https://www.projects.mohamadhossein.ir/
 
 </> by: https://mohamadhossein.ir/
 
-
+**fast run:**
+----
+1. extract "build.zip" in your host directory
+2. have fun!
 
 
 # Getting Started with Create React App
