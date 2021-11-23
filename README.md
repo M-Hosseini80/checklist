@@ -1,6 +1,7 @@
 
 # Terms of Use
-This project is only a beta and personal version,
+This project is only a beta and personal version
+
 it save all  of your note data on "LocalStorage"
 
 
